@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5095BF1-4395-4163-9641-6E924BBEED38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PresentationLayer</RootNamespace>
+    <AssemblyName>Library</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Journal.exe_I0068_0409.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.8, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ControlKhansari\Control\bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="FMessegeBox">
+      <HintPath>..\..\..\CenterHazineh\CenterHazineh\bin\Debug\FMessegeBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memeber\frmEditMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memeber\frmEditMember.Designer.cs">
+      <DependentUpon>frmEditMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memeber\frmMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memeber\frmMember.Designer.cs">
+      <DependentUpon>frmMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memeber\frmEditMember.resx">
+      <DependentUpon>frmEditMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memeber\frmMember.resx">
+      <DependentUpon>frmMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Journal.exe_I0068_0409.ico" />
+    <None Include="Resources\xpaint.png" />
+    <None Include="Resources\xeyes.png" />
+    <None Include="Resources\wi0054-32.png" />
+    <None Include="Resources\views-32.png" />
+    <None Include="Resources\User-4-Edit-2.gif" />
+    <None Include="Resources\User-4-Add.gif" />
+    <None Include="Resources\User-3-Edit.gif" />
+    <None Include="Resources\User-3-Configuration.gif" />
+    <None Include="Resources\User-3-Add1.gif" />
+    <None Include="Resources\User-3-Add.gif" />
+    <None Include="Resources\User-3.gif" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\User 3 Search.bmp" />
+    <None Include="Resources\unlock.png" />
+    <None Include="Resources\underline.gif" />
+    <None Include="Resources\TRITANIUM BOOK.png" />
+    <None Include="Resources\textcolor.gif" />
+    <None Include="Resources\Symbol Edit.bmp" />
+    <None Include="Resources\Symbol Edit 2.bmp" />
+    <None Include="Resources\Symbol Delete 2.bmp" />
+    <None Include="Resources\style.font.gif" />
+    <None Include="Resources\srch_32.png" />
+    <None Include="Resources\srch_16.png" />
+    <None Include="Resources\shutdown.png" />
+    <None Include="Resources\search-file.png" />
+    <None Include="Resources\search2.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\saveas32_32.png" />
+    <None Include="Resources\save-alt.png" />
+    <None Include="Resources\samba.png" />
+    <None Include="Resources\right_just.gif" />
+    <None Include="Resources\Report.bmp" />
+    <None Include="Resources\Report New.png" />
+    <None Include="Resources\Report Edit.bmp" />
+    <None Include="Resources\Report Edit 2.bmp" />
+    <None Include="Resources\Printer-2.gif" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\Printer Delete.bmp" />
+    <None Include="Resources\Printer Check.bmp" />
+    <None Include="Resources\print_32.png" />
+    <None Include="Resources\Pictures.png" />
+    <None Include="Resources\Pictures.bmp" />
+    <None Include="Resources\Pictures Edit.jpg" />
+    <None Include="Resources\Pictures Edit 2.png" />
+    <None Include="Resources\Pictures Edit 2.bmp" />
+    <None Include="Resources\personal.png" />
+    <None Include="Resources\paste-32x32.png" />
+    <None Include="Resources\password.png" />
+    <None Include="Resources\Password Depot.png" />
+    <None Include="Resources\Mail-New.gif" />
+    <None Include="Resources\mail-edit.png" />
+    <None Include="Resources\mail_send_32.png" />
+    <None Include="Resources\mail_receive.png" />
+    <None Include="Resources\lok.png" />
+    <None Include="Resources\Login Manager.png" />
+    <None Include="Resources\lockstart_session.png" />
+    <None Include="Resources\left_just.gif" />
+    <None Include="Resources\LaST %28Cobalt%29 Books.png" />
+    <None Include="Resources\kwrite.png" />
+    <None Include="Resources\kword.png" />
+    <None Include="Resources\kwallet.png" />
+    <None Include="Resources\kviewshell.png" />
+    <None Include="Resources\kuser1.png" />
+    <None Include="Resources\kuser.png" />
+    <None Include="Resources\knotes.png" />
+    <None Include="Resources\kmail.png" />
+    <None Include="Resources\kghostview.png" />
+    <None Include="Resources\kdmconfig.png" />
+    <None Include="Resources\justifyfull.gif" />
+    <None Include="Resources\java.png" />
+    <None Include="Resources\italic.gif" />
+    <None Include="Resources\iconthemes.png" />
+    <None Include="Resources\icons.png" />
+    <None Include="Resources\Help File.jpg" />
+    <None Include="Resources\Help File Edit 2.bmp" />
+    <None Include="Resources\gpgsm.png" />
+    <None Include="Resources\gpg.png" />
+    <None Include="Resources\File Documents.png" />
+    <None Include="Resources\File Documents New.jpg" />
+    <None Include="Resources\File Documents New.bmp" />
+    <None Include="Resources\File Documents Edit.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\ei0021-32.gif" />
+    <None Include="Resources\edit user.png" />
+    <None Include="Resources\easymoblog.png" />
+    <None Include="Resources\door.png" />
+    <None Include="Resources\Documents New.png" />
+    <None Include="Resources\Documents Edit 2.png" />
+    <None Include="Resources\delete-alt.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\date.png" />
+    <None Include="Resources\cookie.png" />
+    <None Include="Resources\Community Help1.png" />
+    <None Include="Resources\Community Help.png" />
+    <None Include="Resources\coffe.png" />
+    <None Include="Resources\Clock.png" />
+    <None Include="Resources\Client.png" />
+    <None Include="Resources\Client 3.png" />
+    <None Include="Resources\Client 2.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\bold.gif" />
+    <None Include="Resources\block.png" />
+    <None Include="Resources\AVX_ICONS BOOKS ONLINE.png" />
+    <None Include="Resources\article-32.png" />
+    <None Include="Resources\Administrator.png" />
+    <None Include="Resources\Administrator 3.png" />
+    <None Include="Resources\Administrator 2.png" />
+    <None Include="Resources\accept.png" />
+    <None Include="Resources\125.png" />
+    <None Include="Resources\53.png" />
+    <None Include="Resources\41.png" />
+    <None Include="Resources\19.png" />
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessAccessLayer\BusinessAccessLayer.csproj">
+      <Project>{20f801b2-0449-4f30-8280-cf600acca3da}</Project>
+      <Name>BusinessAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessEntity\BusinessEntity.csproj">
+      <Project>{2c885562-c2ec-419e-ac15-4df2173e2008}</Project>
+      <Name>BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{7e9c910c-cfea-486c-aa68-9d34892bcde9}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
